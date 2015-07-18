@@ -1,0 +1,55 @@
+{namespace ewh=TYPO3\WmdbFramework\ViewHelpers}
+<f:for each="{data.meta.courses}" as="course">
+    <div class="box_style_1">
+        <f:if condition="{data.meta.types.2}">
+            <h4>
+                Download files <i class="icon-download pull-right"></i>
+            </h4>
+            <f:for each="{course.downloads}" as="file">
+                <ul>
+                    <li>
+                        <a href="/fileadmin{file.original.identifier}" target="_blank">
+                            <f:if condition="{file.reference.title}">
+                                <f:then>
+                                    {file.reference.title}
+                                </f:then>
+                                <f:else>
+                                    <f:if condition="{file.original.title}">
+                                        <f:then>
+                                            {file.original.title}
+                                        </f:then>
+                                        <f:else>
+                                            {file.original.identifier}
+                                        </f:else>
+                                    </f:if>
+                                </f:else>
+                            </f:if>
+
+                        </a>
+                    </li>
+                </ul>
+            </f:for>
+            <br>
+        </f:if>
+        <f:if condition="{data.meta.types.1}">
+            <h4>Speakers</h4>
+            <f:for each="{course.speaker}" as="speaker">
+                <div class="media">
+                    <div class="pull-right">
+                        <f:if condition="{speaker.image.0}">
+                            <f:image src="fileadmin{speaker.image.0.original.identifier}" alt="" width="68c" height="68c" class="img-circle" />
+                        </f:if>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading">
+                            <ewh:link value="{conf.conf.speakerProfilePid}">
+                                {speaker.firstname} {speaker.lastname}
+                            </ewh:link>
+                        </h5>
+                        <p>{speaker.short_description}</p>
+                    </div>
+                </div>
+            </f:for>
+        </f:if>
+    </div>
+</f:for>

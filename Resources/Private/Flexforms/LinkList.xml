@@ -1,0 +1,28 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Options</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <links>
+                        <TCEforms>
+                            <label>Links</label>
+                            <config>
+                                <type>inline</type>
+                                <foreign_table>tx_wmdbbaseewh_links</foreign_table>
+                                <foreign_label>label</foreign_label>
+                                <maxitems>20</maxitems>
+                            </config>
+                        </TCEforms>
+                    </links>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

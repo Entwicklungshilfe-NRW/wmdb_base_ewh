@@ -1,22 +1,83 @@
-<f:if condition="{data.slides.0}">
-    <section class="tp-banner-container">
-        <div class="tp-banner" >
-            <ul class="sliderwrapper">
+<f:if condition="{data.mode} == 1">
+    <f:then>
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class='col-md-offset-2 col-md-8 text-center'>
+                        <h2>{data.header}</h2>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-offset-2 col-md-8'>
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <f:for each="{data.slides}" key="key" as="slide">
+                                    <f:if condition="{key} == 0">
+                                        <f:then>
+                                            <li data-target="#quote-carousel" data-slide-to="{key}" class="active"></li>
+                                        </f:then>
+                                        <f:else>
+                                            <li data-target="#quote-carousel" data-slide-to="{key}"></li>
+                                        </f:else>
+                                    </f:if>
+                                </f:for>
+                            </ol>
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner">
+                                <f:for each="{data.slides}" key="key" as="slide">
+                                    <f:if condition="{key} == 0">
+                                        <f:then>
+                                            <div class="item active">
+                                        </f:then>
+                                        <f:else>
+                                            <div class="item">
+                                        </f:else>
+                                    </f:if>
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                    <f:image src="fileadmin{slide.image.0.original.identifier}" alt="" class="img-circle" />
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <p>
+                                                        {slide.description}
+                                                    </p>
+                                                    <small>{slide.author}</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End testimonials -->
+    </f:then>
+    <f:else>
+        <f:if condition="{data.slides.0}">
+            <section class="tp-banner-container">
+                <div class="tp-banner" >
+                    <ul class="sliderwrapper">
 
-                <f:for each="{data.slides}" as="slide">
-                    <f:if condition="{slide.style} == 0">
-                        <f:render partial="Partials/Slider/TextLeft" arguments="{slide: slide, conf: conf}" />
-                    </f:if>
-                    <f:if condition="{slide.style} == 1">
-                        <f:render partial="Partials/Slider/TextCenter" arguments="{slide: slide, conf: conf}" />
-                    </f:if>
-                    <f:if condition="{slide.style} == 2">
-                        <f:render partial="Partials/Slider/Split" arguments="{slide: slide, conf: conf}" />
-                    </f:if>
-                </f:for>
+                        <f:for each="{data.slides}" as="slide">
+                            <f:if condition="{slide.style} == 0">
+                                <f:render partial="Partials/Slider/TextLeft" arguments="{slide: slide, conf: conf}" />
+                            </f:if>
+                            <f:if condition="{slide.style} == 1">
+                                <f:render partial="Partials/Slider/TextCenter" arguments="{slide: slide, conf: conf}" />
+                            </f:if>
+                            <f:if condition="{slide.style} == 2">
+                                <f:render partial="Partials/Slider/Split" arguments="{slide: slide, conf: conf}" />
+                            </f:if>
+                        </f:for>
 
-            </ul>
-            <div class="tp-bannertimer"></div>
-        </div>
-    </section><!-- End slider -->
+                    </ul>
+                    <div class="tp-bannertimer"></div>
+                </div>
+            </section><!-- End slider -->
+        </f:if>
+    </f:else>
 </f:if>

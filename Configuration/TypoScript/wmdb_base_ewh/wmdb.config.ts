@@ -22,6 +22,7 @@ plugin.tx_wmdbbaseewh_pi {
                 additionalClasses =
             }
         }
+        speakerProfilePid = 24
     }
 }
 # - !!! DO NOT TOUCH !!! -

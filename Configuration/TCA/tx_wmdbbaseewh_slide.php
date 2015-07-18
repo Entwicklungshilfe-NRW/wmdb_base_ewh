@@ -68,6 +68,14 @@ $TCA['tx_wmdbbaseewh_slide'] = array(
 				'size' => '30',
 			)
 		),
+		'author' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_slide.author',
+			'config' => array(
+				'type' => 'input',
+				'size' => '30',
+			)
+		),
 		'description' => array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_slide.description',
@@ -98,7 +106,7 @@ $TCA['tx_wmdbbaseewh_slide'] = array(
 		),
 	),
 	'types' => array(
-		'0' => array('showitem' => 'hidden;;1;;1-1-1, headline, description, image, style')
+		'0' => array('showitem' => 'hidden;;1;;1-1-1, headline, description, author, --div--;Media, image, --div--;Extended, style')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => 'starttime, endtime, fe_group')

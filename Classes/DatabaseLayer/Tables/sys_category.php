@@ -60,4 +60,22 @@ class sys_category extends DatabaseDefault {
 		return $result;
 	}
 
+    /**
+     * @param $elementUid
+     * @param $table
+     * @param $field
+     *
+     * @return array|NULL
+     */
+    public function findCategoriesForElement($elementUid, $table, $field) {
+        $fields = $this->getTable() . '.*';
+        $mm = 'sys_category_record_mm';
+        $tablePart = $this->getTable() . ' INNER JOIN ' . $mm . ' ON ' .
+            $mm . '.fieldname=' . $this->getDb()->fullQuoteStr($field, '') . ' AND ' .
+            $mm . '.tablenames=' . $this->getDb()->fullQuoteStr($table, '') . ' AND ' .
+            $mm . '.uid_local=' . $this->getTable() . '.uid AND ' .
+            $mm . '.uid_foreign=' . intval($elementUid);
+        $where = '1=1' . DatabaseFactory::enableFields($this->getTable());
+        return $this->getDb()->exec_SELECTgetRows($fields, $tablePart, $where);
+    }
 }

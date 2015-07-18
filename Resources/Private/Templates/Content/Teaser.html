@@ -1,0 +1,23 @@
+<hr>
+<f:if condition="{data.mode} == 1">
+    <div class="row">
+        <f:for each="{data.items}" as="item">
+            <f:if condition="{item.content}">
+                <f:then>
+                    <f:format.raw>{item.content}</f:format.raw>
+                </f:then>
+                <f:else>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>{item.header}</h4>
+                        <f:if condition="{item.image.0}">
+                            <p>
+                                <f:image src="fileadmin{item.image.0.original.identifier}" alt="" class="img-responsive" />
+                            </p>
+                        </f:if>
+                        <f:format.html>{item.bodytext}</f:format.html>
+                    </div>
+                </f:else>
+            </f:if>
+        </f:for>
+    </div>
+</f:if>

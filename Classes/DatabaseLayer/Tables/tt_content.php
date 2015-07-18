@@ -6,7 +6,7 @@
  * Time: 07:55
  */
 
-namespace WMDB\WmdbFramework\DatabaseLayer\Tables;
+namespace WMDB\WmdbBaseEwh\DatabaseLayer\Tables;
 
 use TYPO3\CMS\Core\FormProtection\Exception;
 use WMDB\WmdbFramework\DatabaseLayer\Abstracts\DatabaseDefault;
@@ -20,11 +20,6 @@ class tt_content extends DatabaseDefault {
     public function setTable() {
         // TODO: Implement setTable() method.
         $this->table = 'tt_content';
-    }
-
-    public function __construct() {
-        $this->setTable();
-        parent::__construct();
     }
 
     /**

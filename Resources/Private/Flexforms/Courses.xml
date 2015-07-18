@@ -106,7 +106,7 @@
                                         <numIndex index="1">5</numIndex>
                                     </numIndex>
                                 </items>
-                                <maxitems>3</maxitems>
+                                <maxitems>20</maxitems>
                                 <size>3</size>
                                 <multiple>1</multiple>
                             </config>

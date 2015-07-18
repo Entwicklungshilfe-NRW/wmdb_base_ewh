@@ -25,6 +25,7 @@ class Slider extends CustomContentElement {
         $this->pObj->pi_initPIflexForm();
         $data = $this->getPObj()->cObj->data;
         $data['slides'] = $this->loadSlides($this->pObj->pi_getFFvalue($data['pi_flexform'], 'slides'));
+        $data['mode'] = intval($this->pObj->pi_getFFvalue($data['pi_flexform'], 'mode'));
         return $this->getPObj()->renderContent($data);
     }
 

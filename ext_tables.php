@@ -61,7 +61,7 @@ $GLOBALS['TCA']['tt_content']['ctrl']['requestUpdate'] = implode(',', $requestUp
 
 
 
-$allPossibleOptions = 'bodytext;;;richtext:rte_transform[flag=rte_enabled|mode=ts_css], pi_flexform, subheader, header_link image, media, imagewidth, imageorient, imagecaption, imagecols, imageborder, layout, records';
+$allPossibleOptions = 'bodytext;;;richtext:rte_transform[flag=rte_enabled|mode=ts_css], pi_flexform, subheader, header_link, image, media, imagewidth, imageorient, imagecaption, imagecols, imageborder, layout, records';
 $GLOBALS['TCA']['tt_content']['types'][$_EXTKEY . '_cached']['showitem'] = '
 	CType;;wmdblayout;;1-1-1, header;;3;;2-2-2,,
 	--div--;LLL:EXT:cms/locallang_ttc.xlf:CType.I.1, layout;;1-1-1, ' . $allPossibleOptions . ',
@@ -136,7 +136,59 @@ $TCA['tx_wmdbbaseewh_courses'] = array(
 );
 
 
+$TCA['tx_wmdbbaseewh_links'] = array(
+    'ctrl' => array(
+        'title'     => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_links',
+        'label'     => 'label',
+        'tstamp'    => 'tstamp',
+        'crdate'    => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'default_sortby' => 'ORDER BY crdate',
+        'delete' => 'deleted',
+        'enablecolumns' => array(
+            'disabled' => 'hidden',
+        ),
+        'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/tx_wmdbbaseewh_links.php',
+        'iconfile'          => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'icon_tx_wmdbbaseewh_links.gif',
+    ),
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_wmdbbaseewh_links');
 
+$TCA['tx_wmdbbaseewh_speaker'] = array(
+    'ctrl' => array(
+        'title'     => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_speaker',
+        'label'     => 'lastname',
+        'tstamp'    => 'tstamp',
+        'crdate'    => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'default_sortby' => 'ORDER BY crdate',
+        'delete' => 'deleted',
+        'enablecolumns' => array(
+            'disabled' => 'hidden',
+            'starttime' => 'starttime',
+            'endtime' => 'endtime',
+        ),
+        'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/tx_wmdbbaseewh_speaker.php',
+        'iconfile'          => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'icon_tx_wmdbbaseewh_speaker.gif',
+    ),
+);
+
+$TCA['tx_wmdbbaseewh_speaker_milestones'] = array(
+    'ctrl' => array(
+        'title'     => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_speaker_milestones',
+        'label'     => 'title',
+        'tstamp'    => 'tstamp',
+        'crdate'    => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'default_sortby' => 'ORDER BY crdate',
+        'delete' => 'deleted',
+        'enablecolumns' => array(
+            'disabled' => 'hidden',
+        ),
+        'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/tx_wmdbbaseewh_speaker_milestones.php',
+        'iconfile'          => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'icon_tx_wmdbbaseewh_speaker_milestones.gif',
+    ),
+);
 /**
  * ##################################################
  * #		INCLUDE OF CE TYPE DEFINITIONS			#

@@ -86,6 +86,11 @@ $TCA['tx_wmdbbaseewh_courses'] = array(
 			'label' => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_courses.teaser',
 			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('teaser')
 		),
+		'downloads' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_courses.downloads',
+			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('downloads')
+		),
 		'detaillink' => $GLOBALS['TCA']['tt_content']['columns']['header_link'],
 		'promote' => array(
 			'exclude' => 1,
@@ -94,10 +99,20 @@ $TCA['tx_wmdbbaseewh_courses'] = array(
 				'type'    => 'check',
 				'default' => '0'
 			)
-		)
+		),
+        'speaker' => array(
+            'exclude' => 1,
+            'label' => 'LLL:EXT:wmdb_base_ewh/locallang_db.xml:tx_wmdbbaseewh_courses.speaker',
+            'config' => array(
+                'type' => 'select',
+                'foreign_table' => 'tx_wmdbbaseewh_speaker',
+                'maxitems' => 20,
+                'size' => 5
+            )
+        )
 	),
 	'types' => array(
-		'0' => array('showitem' => 'headline, detaillink, description, --div--;Access, hidden;;1;;1-1-1, --div--;Kategorien, promote, tx_wmdbbasewh_courses_cats, --div--;Media, teaser ')
+		'0' => array('showitem' => 'headline, detaillink, description, --div--;Access, hidden;;1;;1-1-1, --div--;Kategorien, promote, tx_wmdbbasewh_courses_cats, --div--;Media, teaser, downloads, --div--;Speaker, speaker')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => 'starttime, endtime, fe_group')

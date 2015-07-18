@@ -10,38 +10,26 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <mode>
+                    <what_to_display>
                         <TCEforms>
                             <label>What to display?</label>
-                            <onChange>reload</onChange>
                             <config>
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <numIndex index="0">Head Slider</numIndex>
-                                        <numIndex index="1">0</numIndex>
+                                        <numIndex index="0">4er Teaser</numIndex>
+                                        <numIndex index="1">1</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">Comment Slider</numIndex>
-                                        <numIndex index="1">1</numIndex>
+                                        <numIndex index="0">5er Logo Teaser</numIndex>
+                                        <numIndex index="1">2</numIndex>
                                     </numIndex>
                                 </items>
                                 <maxitems>1</maxitems>
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </mode>
-                    <slides>
-                        <TCEforms>
-                            <label>Slides</label>
-                            <config>
-                                <type>inline</type>
-                                <foreign_table>tx_wmdbbaseewh_slide</foreign_table>
-                                <foreign_label>headline</foreign_label>
-                                <maxitems>20</maxitems>
-                            </config>
-                        </TCEforms>
-                    </slides>
+                    </what_to_display>
                 </el>
             </ROOT>
         </sDEF>

@@ -32,6 +32,7 @@
             <label index="tx_wmdbbaseewh_slide.style.I.1">Text Center</label>
             <label index="tx_wmdbbaseewh_slide.style.I.2">Picture center - Text on line splitted</label>
             <label index="tx_wmdbbaseewh_slide.style">Style</label>
+            <label index="tx_wmdbbaseewh_slide.author">Author</label>
             <label index="tx_wmdbbaseewh_courses">Kurs</label>
             <label index="tx_wmdbbaseewh_courses.headline">Überschrift</label>
             <label index="tx_wmdbbaseewh_courses.category">Kategorie</label>
@@ -39,6 +40,28 @@
             <label index="tx_wmdbbaseewh_courses.teaser">Vorschau Bild</label>
             <label index="tx_wmdbbaseewh_courses.detaillink">Link zur Detail-Seite</label>
             <label index="tx_wmdbbaseewh_courses.promote">Bewerben</label>
+            <label index="tx_wmdbbaseewh_courses.downloads">Downloads</label>
+            <label index="tx_wmdbbaseewh_links">Link</label>
+            <label index="tx_wmdbbaseewh_links.label">Linklabel</label>
+            <label index="tx_wmdbbaseewh_links.link">Link</label>
+            <label index="tx_wmdbbaseewh_speaker">Entwicklungshelfer</label>
+            <label index="tx_wmdbbaseewh_speaker.lastname">Nachname</label>
+            <label index="tx_wmdbbaseewh_speaker.firstname">Vorname</label>
+            <label index="tx_wmdbbaseewh_speaker.jobtitle">Job Bezeichnung</label>
+            <label index="tx_wmdbbaseewh_speaker.short_description">Kurzbeschreibung</label>
+            <label index="tx_wmdbbaseewh_speaker.description">Beschreibung</label>
+            <label index="tx_wmdbbaseewh_speaker.mail">Mail</label>
+            <label index="tx_wmdbbaseewh_speaker.twitter">Twitter</label>
+            <label index="tx_wmdbbaseewh_speaker.facebook">Facebook</label>
+            <label index="tx_wmdbbaseewh_speaker.googleplus">Google+</label>
+            <label index="tx_wmdbbaseewh_speaker.linkedin">LinkedIn</label>
+            <label index="tx_wmdbbaseewh_speaker.xing">xing</label>
+            <label index="tx_wmdbbaseewh_speaker.image">Bild</label>
+            <label index="tx_wmdbbaseewh_speaker.milestones">Milestones</label>
+            <label index="tx_wmdbbaseewh_speaker_milestones">Milestones</label>
+            <label index="tx_wmdbbaseewh_speaker_milestones.title">Title</label>
+            <label index="tx_wmdbbaseewh_speaker_milestones.description">Beschreibung</label>
+            <label index="tx_wmdbbaseewh_speaker_milestones.achieved">Erreicht am</label>
         </languageKey>
     </data>
 </T3locallang>

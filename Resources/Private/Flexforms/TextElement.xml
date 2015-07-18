@@ -12,17 +12,13 @@
                 <el>
                     <mode>
                         <TCEforms>
-                            <label>What to display?</label>
+                            <label>Type</label>
                             <onChange>reload</onChange>
                             <config>
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <numIndex index="0">Head Slider</numIndex>
-                                        <numIndex index="1">0</numIndex>
-                                    </numIndex>
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">Comment Slider</numIndex>
+                                        <numIndex index="0">Zweispalter</numIndex>
                                         <numIndex index="1">1</numIndex>
                                     </numIndex>
                                 </items>
@@ -31,17 +27,28 @@
                             </config>
                         </TCEforms>
                     </mode>
-                    <slides>
+                    <content>
                         <TCEforms>
-                            <label>Slides</label>
+                            <label>Content Links</label>
                             <config>
-                                <type>inline</type>
-                                <foreign_table>tx_wmdbbaseewh_slide</foreign_table>
-                                <foreign_label>headline</foreign_label>
-                                <maxitems>20</maxitems>
+                                <type>text</type>
+                                <cols>24</cols>
+                                <rows>3</rows>
                             </config>
+                            <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
                         </TCEforms>
-                    </slides>
+                    </content>
+                    <content2>
+                        <TCEforms>
+                            <label>Content Rechts</label>
+                            <config>
+                                <type>text</type>
+                                <cols>24</cols>
+                                <rows>3</rows>
+                            </config>
+                            <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+                        </TCEforms>
+                    </content2>
                 </el>
             </ROOT>
         </sDEF>
