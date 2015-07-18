@@ -1,0 +1,45 @@
+{namespace ewh=TYPO3\WmdbFramework\ViewHelpers}
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>{data.header}</h2>
+        <p class="lead">{data.subheader}</p>
+    </div>
+</div><!-- End row -->
+<div class="row">
+
+    <f:if condition="{data.teaser.0}">
+        <f:for each="{data.teaser}" as="teaser">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-item">
+                    <f:if condition="{teaser.promote}">
+                        <span class="ribbon_course"></span>
+                    </f:if>
+                    <div class="photo">
+                        <ewh:link value="{teaser.detaillink}">
+                            <f:image src="fileadmin{teaser.teaser.0.original.identifier}" alt="" width="261c" height="195c" />
+                        </ewh:link>
+                        <f:if condition="{teaser.categories.0}">
+                            <div class="cat_row">{teaser.categories.0.title}</div>
+                        </f:if>
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div class="course_info col-md-12 col-sm-12">
+                                <h4>{teaser.headline}</h4>
+                                <f:format.html>{teaser.description}</f:format.html>
+                                <div class="rating">
+                                    <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class=" icon-star-empty"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator clearfix">
+                            <p class="btn-add"> <a href="apply_2.html"><i class="icon-export-4"></i> Subscribe</a></p>
+                            <p class="btn-details"> <ewh:link value="{teaser.detaillink}"><i class=" icon-list"></i> Details</ewh:link></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </f:for>
+    </f:if>
+
+</div><!-- End row -->

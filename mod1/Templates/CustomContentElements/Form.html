@@ -1,0 +1,30 @@
+<div>
+    <form action="" method="post">
+        <label>
+            Mögliche Elemente:
+            <input type="hidden" name="availableTypes" style="width: 600px;" value="bodytext, pi_flexform, subheader, image, media, imagewidth, imageorient, imagecaption, imagecols, imageborder, layout, records" />
+        </label>
+        <ul>
+            <li>bodytext</li>
+            <li>pi_flexform</li>
+            <li>subheader</li>
+            <li>media</li>
+            <li>imagewidth</li>
+            <li>imageorient</li>
+            <li>imagecaption</li>
+            <li>imagecols</li>
+            <li>layout</li>
+            <li>records</li>
+        </ul>
+        <br />
+        <f:for each="{data.configFiles}" as="file">
+            <div style="margin-left: 30px">
+                <label>
+                    <input type="checkbox" name="file[]" value="{file.filename}" {file.checked}/>
+                    {file.filename}
+                </label>
+            </div>
+        </f:for>
+        <input type="submit" value="Erstellen/Updaten" />
+    </form>
+</div>

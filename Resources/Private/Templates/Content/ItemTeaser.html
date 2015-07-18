@@ -1,0 +1,24 @@
+<section id="main-features">
+    <div class="divider_top_black"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-10 col-md-offset-1 text-center">
+                <h2>{data.header}</h2>
+                <p class="lead">
+                    {data.subheader}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <f:for each="{data.image}" as="image">
+                <div class="col-md-6">
+                    <div class="feature">
+                        <f:image src="fileadmin{image.original.identifier}" alt="" width="65c" height="65c" additionalAttributes="{style: 'position: absolute;   top: 0;   left: 0;   padding: 0;   margin: 0;   width: 65px;   height: 65px;   line-height: 60px;'}" />
+                        <h3>{image.reference.title}</h3>
+                        <p>{image.reference.description}</p>
+                    </div>
+                </div>
+            </f:for>
+        </div><!-- End row -->
+    </div><!-- End container-->
+</section><!-- End main-features -->

@@ -1,0 +1,119 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Options</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <what_to_display>
+                        <TCEforms>
+                            <label>What to display?</label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Content: Kurs Teaser</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Content: Kurs Liste</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Widget: Kurs Meta-Informationen</numIndex>
+                                        <numIndex index="1">2</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                            </config>
+                        </TCEforms>
+                    </what_to_display>
+                    <course>
+                        <TCEforms>
+                            <label>Kurse</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_wmdbbaseewh_courses</allowed>
+                                <size>5</size>
+                                <maxitems>50</maxitems>
+                                <minitems>1</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </course>
+                    <list_headline>
+                        <TCEforms>
+                            <label>Überschrift</label>
+                            <displayCond>FIELD:what_to_display:=:1</displayCond>
+                            <config>
+                                <type>input</type>
+                                <size>20</size>
+                                <max>30</max>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </list_headline>
+                    <list_description>
+                        <TCEforms>
+                            <label>Beschreibung</label>
+                            <displayCond>FIELD:what_to_display:=:1</displayCond>
+                            <config>
+                                <type>text</type>
+                                <cols>24</cols>
+                                <rows>3</rows>
+                            </config>
+                            <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+                        </TCEforms>
+                    </list_description>
+
+                    <meta_options>
+                        <TCEforms>
+                            <label>Meta Informationen</label>
+                            <displayCond>FIELD:what_to_display:=:2</displayCond>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Kategorien</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Entwicklunsghelfer</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Downloads</numIndex>
+                                        <numIndex index="1">2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">Bewertungen</numIndex>
+                                        <numIndex index="1">3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">Stunden</numIndex>
+                                        <numIndex index="1">4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">Lerneinheiten</numIndex>
+                                        <numIndex index="1">5</numIndex>
+                                    </numIndex>
+                                </items>
+                                <maxitems>3</maxitems>
+                                <size>3</size>
+                                <multiple>1</multiple>
+                            </config>
+                        </TCEforms>
+                    </meta_options>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

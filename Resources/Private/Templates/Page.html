@@ -1,0 +1,47 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="index.html" id="logo">Learn</a>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+                <f:cObject typoscriptObjectPath="wmdb.nav.meta"/>
+            </div>
+        </div>
+    </div>
+</header><!-- End header -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <f:cObject typoscriptObjectPath="wmdb.nav.main"/>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+</nav>
+
+<f:render partial="{f:cObject(typoscriptObjectPath: 'framework.backend_layout', data:'{data}', currentValueKey: '{data.uid}')}" arguments="{conf:conf}" />
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Subscribe to our Newsletter for latest news.</h3>
+                <div id="message-newsletter"></div>
+                <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
+                    <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
+                    <button id="submit-newsletter" class=" button_outline"> Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container" id="nav-footer">
+        <div class="row text-left">
+            <f:cObject typoscriptObjectPath="framework.nav.footer"/>
+        </div><!-- End row -->
+    </div>
+    <div id="copy_right">© 1998-2014</div>
+</footer>

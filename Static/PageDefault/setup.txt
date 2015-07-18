@@ -1,0 +1,30 @@
+#########################
+# Includes
+#########################
+<INCLUDE_TYPOSCRIPT: source="DIR: EXT:wmdb_framework/Configuration/TypoScript/tt_news/" extensions="ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.backend_layout.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.gridelements.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.logo.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.pagination.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.iconbar.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.main.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.sub.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.meta.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.rootline.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.nav.footer.ts">
+
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_base_ewh/Configuration/TypoScript/PageDefault/wmdb.page.ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_base_ewh/Configuration/TypoScript/PageDefault/wmdb.headerData.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_base_ewh/Configuration/TypoScript/PageDefault/wmdb.footerData.ts">
+
+
+<INCLUDE_TYPOSCRIPT: source="DIR: EXT:wmdb_base_ewh/Configuration/TypoScript/wmdb_base_ewh/" extensions="ts">

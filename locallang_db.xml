@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'wmdb_base_ewh'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.CType.Cached">Wmdb Base: Entwicklungshilfe  Contentelement</label>
+            <label index="tt_content.CType.Uncached">Wmdb Base: Entwicklungshilfe  uncached CE</label>
+            <label index="CType.ListLabel">Wmdb Base CE:</label>
+            <label index="tt_content.CType.cached_description">Some description what this CE is about.</label>
+            <label index="tt_content.CType.uncached_description">Some description what this CE is about.</label>
+            <label index="tx_WmdbBaseEwh_organisation_units">Organisation Units</label>
+            <label index="tx_WmdbBaseEwh_organisation_units.title">Title</label>
+            <label index="tx_WmdbBaseEwh_organisation_units.parent">Parent</label>
+            <label index="tx_WmdbBaseEwh_assets">Assets</label>
+            <label index="tx_WmdbBaseEwh_assets.title">Title</label>
+            <label index="tx_WmdbBaseEwh_assets.description">Description</label>
+            <label index="tx_WmdbBaseEwh_assets.categories">Categories</label>
+            <label index="tx_WmdbBaseEwh_assets.categorie_description">Categorie Description</label>
+            <label index="tx_WmdbBaseEwh_assets.preview_image">Preview Image</label>
+            <label index="tx_WmdbBaseEwh_assets.external_url">External URL</label>
+            <label index="tx_WmdbBaseEwh_assets.orga_unit">Organisation Unit</label>
+            <label index="tx_WmdbBaseEwh_assets.access">Access</label>
+            <label index="tx_WmdbBaseEwh_assets.extended">Extended</label>
+            <label index="tx_wmdbbaseewh_slide">EWH Slide</label>
+            <label index="tx_wmdbbaseewh_slide.headline">Headline</label>
+            <label index="tx_wmdbbaseewh_slide.description">Description</label>
+            <label index="tx_wmdbbaseewh_slide.image">Image</label>
+            <label index="tx_wmdbbaseewh_slide.style.I.0">Text left</label>
+            <label index="tx_wmdbbaseewh_slide.style.I.1">Text Center</label>
+            <label index="tx_wmdbbaseewh_slide.style.I.2">Picture center - Text on line splitted</label>
+            <label index="tx_wmdbbaseewh_slide.style">Style</label>
+            <label index="tx_wmdbbaseewh_courses">Kurs</label>
+            <label index="tx_wmdbbaseewh_courses.headline">Überschrift</label>
+            <label index="tx_wmdbbaseewh_courses.category">Kategorie</label>
+            <label index="tx_wmdbbaseewh_courses.description">Beschreibung</label>
+            <label index="tx_wmdbbaseewh_courses.teaser">Vorschau Bild</label>
+            <label index="tx_wmdbbaseewh_courses.detaillink">Link zur Detail-Seite</label>
+            <label index="tx_wmdbbaseewh_courses.promote">Bewerben</label>
+        </languageKey>
+    </data>
+</T3locallang>

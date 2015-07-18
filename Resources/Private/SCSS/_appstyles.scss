@@ -1,0 +1,90 @@
+// Your custom SCSS here
+.col-md-4 {
+	background-color: green;
+}
+
+// Special Items
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/*************************/
+/* Header-Elemente       */
+/*************************/
+
+p {
+	background-color: #fff;
+	color: #000;
+}
+
+// METANAV
+ul.WmdbMetaNav {
+	margin: 5px 0;
+	font-size: .75rem;
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin-left:5px;
+		a {
+			text-decoration: none;
+			font-size: 12px;
+			color: $secondary-color;
+		}
+	}
+	li:first-child {
+		margin: 0;
+	}
+}
+
+/*************************/
+/* CE:Image		         */
+/*************************/
+// Img beside Text
+.img-beside img {
+	margin-top: 1rem;
+}
+
+// Img in Text
+.img-intext {
+	max-width: 30vw;
+	&.left {
+		margin: 0 1rem 1rem 0;
+	}
+	&.right {
+		margin: 0 0 1rem 1rem;
+	}
+}
+
+/*************************/
+/* CONTENT - ELEMENTE    */
+/*************************/
+
+
+// Contentspalte
+
+.content {
+  padding: 0 0 0 20px;
+}
+
+
+// Boxen und Icons linke Spalte
+
+
+// Rootline
+.rootline  {
+  font-size: .6875rem;
+  color: $primary-color;
+  @extend .marBot20;
+
+  a {
+	color: $secondary-color;
+	text-decoration: none;
+  }
+}
+
+
+/*************************/
+/* FOOTER                */
+/*************************/

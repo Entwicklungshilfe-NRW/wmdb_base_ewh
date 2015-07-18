@@ -1,0 +1,46 @@
+<li data-transition="fade" data-slotamount="4" data-masterspeed="1500" >
+    <!-- MAIN IMAGE -->
+    <f:image src="fileadmin{slide.image.0.original.identifier}" alt="" height="600c" additionalAttributes="{data-bgfit: 'cover', data-bgposition: 'left top', data-bgrepeat: 'no-repeat'}" />
+    <!-- LAYERS -->
+    <div class="tp-caption large_bold_white customin customout"
+         data-x="center" data-hoffset="0"
+         data-y="160"
+         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+         data-speed="1000"
+         data-start="400"
+         data-easing="Back.easeInOut"
+         data-endspeed="300"
+         style="z-index: 11">{slide.headline}
+    </div>
+    <f:for each="{slide.split.left}" as="part">
+        <div class="tp-caption medium_bg_darkblue skewfromleft customout"
+             data-x="left"
+             data-y="{part.offset}"
+             data-hoffset="30"
+             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="800"
+             data-start="{part.timeOffset}"
+             data-easing="Power4.easeOut"
+             data-endspeed="300"
+             data-endeasing="Power1.easeIn"
+             data-captionhidden="on"
+             style="z-index: 6">{part.text}
+        </div>
+    </f:for>
+    <f:for each="{slide.split.right}" as="part">
+        <div class="tp-caption medium_bg_darkblue skewfromleft customout"
+             data-x="right"
+             data-y="{part.offset}"
+             data-hoffset="-30"
+             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="800"
+             data-start="{part.timeOffset}"
+             data-easing="Power4.easeOut"
+             data-endspeed="300"
+             data-endeasing="Power1.easeIn"
+             data-captionhidden="on"
+             style="z-index: 6">{part.text}
+        </div>
+    </f:for>
+</li>
