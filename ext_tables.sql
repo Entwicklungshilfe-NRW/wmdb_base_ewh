@@ -48,7 +48,7 @@ CREATE TABLE tx_wmdbbaseewh_courses (
     description text,
     teaser tinytext,
     detaillink tinytext,
-    promote int(11) DEFAULT '0' NOT NULL,,
+    promote int(11) DEFAULT '0' NOT NULL,
     speaker tinytext,
     downloads tinytext,
 
