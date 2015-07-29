@@ -1,5 +1,5 @@
 #########################
 # Includes
 #########################
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/Framework.constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.constants.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_base_ewh/Configuration/TypoScript/PageDefault/wmdb.constants.ts">
