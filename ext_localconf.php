@@ -17,7 +17,7 @@ if (!defined('TYPO3_MODE')) {
 /**
  * Hook um Flexforms für das eigene list_type-Feld zu ermöglichen
  */
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][] = 'TYPO3\\WmdbBaseEwh\\Hooks\\GetFlexFormDSClass';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][] = 'TYPO3\\WmdbBaseEwh\\Hooks\\GetFlexformDSClass';
 
 $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['wmdb_base_ewh'] = 'EXT:' . $_EXTKEY . '/Classes/Dispatcher/EIDDispatcher.php';
 
