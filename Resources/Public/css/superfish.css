@@ -57,7 +57,6 @@ ul.sf-menu li ul {
 	background-color:#252525;
 	}
 .sf-menu li {
-	background: ;
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
@@ -67,7 +66,7 @@ ul.sf-menu li a{
 	color:#fff;
 }
 ul.sf-menu li a:hover{
-	color:#30d9a4;
+	color:#ea5b0c;
 	outline:none;
 }
 .sf-menu ul li {
@@ -80,8 +79,8 @@ ul.sf-menu li a:hover{
 	padding: 0.9em 1.8em;
 }
 .sf-menu ul li a:hover {
-	background: #30d9a4;
-	color:#111;
+	background: #ea5b0c;
+	color:#FFF;
 		outline:none;
 }
 .sf-menu ul ul li {
@@ -118,7 +117,7 @@ ul.sf-menu li a:hover{
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-	border-top-color: #30d9a4; /* IE8 fallback colour */
+	border-top-color: #ea5b0c; /* IE8 fallback colour */
 }
 /* styling for right-facing arrows */
 .sf-arrows ul .sf-with-ul:after {
