@@ -112,7 +112,9 @@ class Courses extends CustomContentElement {
                     $speakerArray = $this->speaker->findByUidList($course['speaker']);
                     if (is_array($speakerArray)) {
                         foreach ($speakerArray AS &$speaker) {
-                            $speaker['milestones'] = $this->speakerMileStones->findByUidList($speaker['milestones']);
+                            if($speaker['milestones'] != '') {
+                                $speaker['milestones'] = $this->speakerMileStones->findByUidList($speaker['milestones']);
+                            }
                             $speaker['image'] = $this->getPObj()->loadFalData($speaker, 'image', 'tx_wmdbbaseewh_speaker');
                         }
                     }
