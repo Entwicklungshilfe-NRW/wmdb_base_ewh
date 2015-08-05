@@ -2957,6 +2957,7 @@ footer h3 {
 	color: #FFF;
 	padding: 20px;
 	word-break: normal;
+	white-space: normal;
 }
 
 .WmdbSlideFrame .WmdbSlideHeadline {
@@ -2969,5 +2970,4 @@ footer h3 {
 	font-size: 14px;
 	margin: 20px;
 	width: 1000px;
-	white-space: normal;
 }
