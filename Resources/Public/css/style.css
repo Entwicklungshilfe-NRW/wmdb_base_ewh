@@ -2945,3 +2945,28 @@ footer h3 {
 #main_content.background-grey p.lead {
 	color: #FFF;
 }
+
+.WmdbSlideFrame {
+	position: absolute;
+	top: 100px;
+	background: rgba(115,115,115,0.95);
+	border: 10px solid #FFF;
+	width: 1100px;
+	left: calc(50% - 550px);
+	text-align: center;
+	color: #FFF;
+	padding: 20px;
+	word-break: normal;
+}
+
+.WmdbSlideFrame .WmdbSlideHeadline {
+	font-size: 48px;
+	margin: 30px;
+	line-height: normal;
+}
+
+.WmdbSlideFrame .WmdbSlideDescription {
+	font-size: 14px;
+	margin: 20px;
+	width: 1000px;
+}
