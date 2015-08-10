@@ -58,7 +58,7 @@ class tx_wmdbbaseewh_speaker_milestones extends DatabaseDefault {
                 '',
                 'FIELD(uid, ' . $list . ')');
         } else {
-            return null;
+            return array();
         }
     }
 }
