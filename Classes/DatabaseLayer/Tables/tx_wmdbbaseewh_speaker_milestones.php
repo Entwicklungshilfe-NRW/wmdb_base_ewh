@@ -58,7 +58,7 @@ class tx_wmdbbaseewh_speaker_milestones extends DatabaseDefault {
                 '',
                 'FIELD(uid, ' . $list . ')');
         } else {
-            throw new \Exception('Given uid list does not contain uids! Table: ' . $this->getTable());
+            return null;
         }
     }
 }
