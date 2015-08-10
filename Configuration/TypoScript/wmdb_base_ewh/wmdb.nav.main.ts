@@ -16,6 +16,6 @@ wmdb.nav.main {
 
     10.1.ACT.wrapItemAndSub = <li>|</li>
 
-    10.2.wrap = <ul>|</ul>
+    10.2.wrap = <div class="mobnav-subarrow"></div><ul>|</ul>
     10.2.NO.wrapItemAndSub = <li>|</li>
 }
