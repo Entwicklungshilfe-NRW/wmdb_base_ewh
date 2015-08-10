@@ -2,10 +2,21 @@
 
 
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Kotankt Forumlar', 'ContactForm'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');
+$GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_excludelist"]["ContactForm"] = "bodytext,subheader,image,media,imagewidth,imageorient,imagecaption,imagecols,imageborder,layout,records";
+$GLOBALS["TYPO3_CONF_VARS"]["EXT"]["wmdb_base_ewh"]["specialsMapping"]["ContactForm"] = array("class" => 'TYPO3\WmdbBaseEwh\CustomContentElements\ContactForm');
+$GLOBALS["TCA"]["tt_content"]["columns"]["pi_flexform"]["config"]["ds"]["ContactForm,wmdb_base_ewh_pi1"] = "FILE:EXT:wmdb_base_ewh/Resources/Private/Flexforms/ContactForm.xml";
+
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Kurse', 'Courses'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');
 $GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_excludelist"]["Courses"] = "bodytext,image,media,imagewidth,imageorient,imagecaption,imagecols,imageborder,layout,records";
 $GLOBALS["TYPO3_CONF_VARS"]["EXT"]["wmdb_base_ewh"]["specialsMapping"]["Courses"] = array("class" => 'TYPO3\WmdbBaseEwh\CustomContentElements\Courses');
 $GLOBALS["TCA"]["tt_content"]["columns"]["pi_flexform"]["config"]["ds"]["Courses,wmdb_base_ewh_pi1"] = "FILE:EXT:wmdb_base_ewh/Resources/Private/Flexforms/Courses.xml";
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Google Map', 'GoogleMap'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');
+$GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_excludelist"]["GoogleMap"] = "bodytext,subheader,image,media,imagewidth,imageorient,imagecaption,imagecols,imageborder,layout,records";
+$GLOBALS["TCA"]["tt_content"]["columns"]["pi_flexform"]["config"]["ds"]["GoogleMap,wmdb_base_ewh_pi1"] = "FILE:EXT:wmdb_base_ewh/Resources/Private/Flexforms/GoogleMap.xml";
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Item teaser', 'ItemTeaser'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');
@@ -16,6 +27,12 @@ $GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_exclude
 $GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_excludelist"]["LinkList"] = "bodytext,subheader,image,media,imagewidth,imageorient,imagecaption,imagecols,imageborder,layout,records";
 $GLOBALS["TYPO3_CONF_VARS"]["EXT"]["wmdb_base_ewh"]["specialsMapping"]["LinkList"] = array("class" => 'TYPO3\WmdbBaseEwh\CustomContentElements\LinkList');
 $GLOBALS["TCA"]["tt_content"]["columns"]["pi_flexform"]["config"]["ds"]["LinkList,wmdb_base_ewh_pi1"] = "FILE:EXT:wmdb_base_ewh/Resources/Private/Flexforms/LinkList.xml";
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Entwicklungshelfer', 'Profile'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');
+$GLOBALS["TCA"]["tt_content"]["types"]["wmdb_base_ewh_cached"]["subtypes_excludelist"]["Profile"] = "bodytext,subheader,image,media,imagewidth,imageorient,imagecaption,imagecols,imageborder,layout,records";
+$GLOBALS["TYPO3_CONF_VARS"]["EXT"]["wmdb_base_ewh"]["specialsMapping"]["Profile"] = array("class" => 'TYPO3\WmdbBaseEwh\CustomContentElements\Profile');
+$GLOBALS["TCA"]["tt_content"]["columns"]["pi_flexform"]["config"]["ds"]["Profile,wmdb_base_ewh_pi1"] = "FILE:EXT:wmdb_base_ewh/Resources/Private/Flexforms/Profile.xml";
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array('Slider', 'Slider'), 'tx_wmdbbaseewh_list_type','wmdb_base_ewh');

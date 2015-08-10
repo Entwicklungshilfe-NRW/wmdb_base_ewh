@@ -1,0 +1,8 @@
+<f:if condition="{data.pluginType} == 1">
+    <f:then>
+        <f:render partial="Partials/Profile/Detail" arguments="{data: data, conf: conf}" />
+    </f:then>
+    <f:else>
+        <f:render partial="Partials/Profile/Overview" arguments="{data: data, conf: conf}" />
+    </f:else>
+</f:if>

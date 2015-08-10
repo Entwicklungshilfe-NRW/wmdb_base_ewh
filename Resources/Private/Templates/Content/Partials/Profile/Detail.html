@@ -1,0 +1,140 @@
+<f:if condition="{data.speaker.uid}">
+    <f:then>
+        <div class="row">
+            <aside class="col-md-4">
+                <div class=" box_style_1 profile">
+                    <f:if condition="{data.speaker.image.0}">
+                        <p class="text-center">
+                            <f:image src="fileadmin{data.speaker.image.0.original.identifier}" alt="" width="150c" height="150c" class="img-circle styled" />
+                        </p>
+                    </f:if>
+                    <ul class="social_teacher">
+                        <f:if condition="{data.speaker.facebook}">
+                            <li>
+                                <ewh:link value="{data.speaker.facebook}">
+                                    <i class="icon-facebook"></i>
+                                </ewh:link>
+                            </li>
+                        </f:if>
+                        <f:if condition="{data.speaker.twitter}">
+                            <li>
+                                <ewh:link value="{data.speaker.twitter}">
+                                    <i class="icon-twitter"></i>
+                                </ewh:link>
+                            </li>
+                        </f:if>
+                        <f:if condition="{data.speaker.google}">
+                            <li>
+                                <ewh:link value="{data.speaker.google}">
+                                    <i class="icon-google"></i>
+                                </ewh:link>
+                            </li>
+                        </f:if>
+                    </ul>
+                    <ul>
+                        <li>Name <strong class="pull-right">{data.speaker.firstname} {data.speaker.lastname}</strong> </li>
+                        <li>Email <strong class="pull-right">{data.speaker.mail}</strong></li>
+                        <li>Telephone  <strong class="pull-right">+34 004238423</strong></li>
+                        <li>Students <strong class="pull-right">42</strong></li>
+                        <li>Lessons <strong class="pull-right">12</strong></li>
+                        <li>Courses <strong class="pull-right">15</strong></li>
+                    </ul>
+
+                </div><!-- End box-sidebar -->
+            </aside><!-- End aside -->
+
+            <div class="col-md-8">
+
+                <!--  Tabs -->
+                <ul class="nav nav-tabs" id="mytabs">
+                    <li class="active"><a href="#profile_teacher" data-toggle="tab">Profil</a></li>
+                    <li><a href="#courses" data-toggle="tab">Kurse</a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade in active" id="profile_teacher">
+                        <h3>Über mich</h3>
+                        <f:format.html>{data.speaker.description}</f:format.html>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list_3">
+                                    <f:for each="{data.speaker.milestones.leftCol}" as="milestone">
+                                        <li>
+                                            <strong>
+                                                <f:format.date format="Y">@{milestone.achieved}</f:format.date> - {milestone.title}
+                                            </strong>
+                                            <p>{milestone.description}</p>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list_3">
+                                    <f:for each="{data.speaker.milestones.rightCol}" as="milestone">
+                                        <li>
+                                            <strong>
+                                                <f:format.date format="Y">@{milestone.achieved}</f:format.date> - {milestone.title}
+                                            </strong>
+                                            <p>{milestone.description}</p>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </div><!-- End row-->
+                    </div><!-- End tab-pane -->
+
+                    <div class="tab-pane fade in" id="courses">
+                        <h3>Meine Kurse</h3>
+                        <p>In folgenden Kursen bin ich vertreten:</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Kategorie</th>
+                                    <th>Bezeichnung</th>
+                                    <th>Dauer</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <f:for each="{data.speaker.courses}" as="course">
+                                    <tr>
+                                        <td>
+                                            <f:for each="{course.categories}" key="key" as="category">
+                                                <f:if condition="{key} > 0">
+                                                    <f:then>
+                                                        , {category.title}
+                                                    </f:then>
+                                                    <f:else>
+                                                        {category.title}
+                                                    </f:else>
+                                                </f:if>
+                                            </f:for>
+                                        </td>
+                                        <td>
+                                            <f:link.page pageUid="{course.detaillink}">
+                                                {course.headline}
+                                            </f:link.page>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </f:for>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!-- End tab-pane -->
+
+                </div>   <!-- End content-->
+
+            </div><!-- End col-md-8-->
+        </div><!-- End row-->
+    </f:then>
+    <f:else>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            No speaker found!
+        </div>
+    </f:else>
+</f:if>

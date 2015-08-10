@@ -60,4 +60,13 @@ class tx_wmdbbaseewh_speaker extends DatabaseDefault {
             throw new \Exception('Given uid list does not contain uids! Table: ' . $this->getTable());
         }
     }
+
+    /**
+     * Return all active items
+     *
+     * @return array|NULL
+     */
+    public function findAll() {
+        return $this->getDb()->exec_SELECTgetRows('*', $this->getTable(), '1=1' . DatabaseFactory::enableFields($this->getTable()));
+    }
 }

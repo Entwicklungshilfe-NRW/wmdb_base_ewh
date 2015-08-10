@@ -60,4 +60,23 @@ class tx_wmdbbaseewh_courses extends DatabaseDefault {
 		return $result;
 	}
 
+	/**
+	 * @param $speakerUid
+	 *
+	 * @return array
+	 */
+	public function findCoursesOfSpeaker($speakerUid) {
+		$result = array();
+		if($speakerUid > 0) {
+			$fields = '*';
+			$table = $this->getTable();
+			$where = 'FIND_IN_SET(' . (int)$speakerUid . ', speaker)' . DatabaseFactory::enableFields($this->getTable());
+			$rows = $this->getDb()->exec_SELECTgetRows($fields, $table, $where);
+			if(is_array($rows)) {
+				$result = $rows;
+			}
+		}
+		return $result;
+	}
+
 }

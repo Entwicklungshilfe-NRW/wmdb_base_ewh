@@ -1,0 +1,43 @@
+{namespace ewh=TYPO3\WmdbFramework\ViewHelpers}
+<div class="row">
+    <f:for each="{data.speaker}" as="speaker">
+        <div class="col-md-6 col-sm-6">
+            <div class=" box_style_3">
+                <f:if condition="{speaker.image.0}">
+                    <p>
+                        <f:image src="fileadmin{speaker.image.0.original.identifier}" alt="" width="150c" height="150c" class="img-circle styled" />
+                    </p>
+                </f:if>
+                <h4 class="p-title">{speaker.firstname} {speaker.lastname} <small>{speaker.jobtitle}</small></h4>
+                <f:format.html>{speaker.short_description}</f:format.html>
+                <ul class="social_team">
+                    <f:if condition="{speaker.facebook}">
+                        <li>
+                            <ewh:link value="{speaker.facebook}">
+                                <i class="icon-facebook"></i>
+                            </ewh:link>
+                        </li>
+                    </f:if>
+                    <f:if condition="{speaker.twitter}">
+                        <li>
+                            <ewh:link value="{speaker.twitter}">
+                                <i class="icon-twitter"></i>
+                            </ewh:link>
+                        </li>
+                    </f:if>
+                    <f:if condition="{speaker.google}">
+                        <li>
+                            <ewh:link value="{speaker.google}">
+                                <i class="icon-google"></i>
+                            </ewh:link>
+                        </li>
+                    </f:if>
+                </ul>
+                <hr>
+                <f:link.page pageUid="{conf.conf.speakerProfilePid}" additionalParams="{tx_wmdbbaseewh_pi1: '{speaker: speaker.uid}'}" class="button_medium_outline">
+                    Profil
+                </f:link.page>
+            </div>
+        </div>
+    </f:for>
+</div><!-- End row -->
