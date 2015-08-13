@@ -3053,3 +3053,15 @@ div.csc-mailform fieldset.WmdbContactForm > ol > li > label > em {
 		top: 20px !important;
 	}
 }
+
+.center {
+	text-align: center;
+}
+
+#nav-footer a {
+	color: #FFF;
+}
+
+#nav-footer a:hover {
+	color: #ea5b0c;
+}
