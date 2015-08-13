@@ -201,7 +201,7 @@ h1 {
 }
 #sub-header-features-2 p{
 	font-size:15px;
-	font-weight:600;
+	font-weight:normal;
 }
 #sub-header-features p strong, #sub-header-features ul li strong{
 	color:#5b6462;
