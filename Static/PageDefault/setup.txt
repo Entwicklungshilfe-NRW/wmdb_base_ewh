@@ -4,7 +4,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: EXT:wmdb_framework/Configuration/TypoScript/tt_news/" extensions="ts">
 
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.backend_layout.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.content.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.content.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.gridelements.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:wmdb_framework/Configuration/TypoScript/Page.Default/framework.config.ts">
