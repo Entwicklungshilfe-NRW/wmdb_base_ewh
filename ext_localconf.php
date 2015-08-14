@@ -27,7 +27,7 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['wmdb_base_ewh'] = 'EXT:' . $_E
  * ##################################################
  */
 if(file_exists(PATH_site . 'typo3conf/ext/' . $_EXTKEY . '/Configuration/CEDefinition.php')) {
-	require_once(PATH_site . 'typo3conf/ext/' . $_EXTKEY . '/Configuration/CEDefinition.php');
+	include(PATH_site . 'typo3conf/ext/' . $_EXTKEY . '/Configuration/CEDefinition.php');
 }
 
 $GLOBALS['TCA']['tt_content']['types'][$_EXTKEY . '_uncached'] = $GLOBALS['TCA']['tt_content']['types'][$_EXTKEY . '_cached'];
