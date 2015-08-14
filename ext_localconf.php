@@ -30,6 +30,9 @@ if(file_exists(PATH_site . 'typo3conf/ext/' . $_EXTKEY . '/Configuration/CEDefin
 	require_once(PATH_site . 'typo3conf/ext/' . $_EXTKEY . '/Configuration/CEDefinition.php');
 }
 
+$GLOBALS['TCA']['tt_content']['types'][$_EXTKEY . '_uncached'] = $GLOBALS['TCA']['tt_content']['types'][$_EXTKEY . '_cached'];
+$GLOBALS['TYPO3_CONF_VARS']['CONF'][$_EXTKEY] = $GLOBALS['TYPO3_CONF_VARS']['EXT'][$_EXTKEY];
+
 $GLOBALS['TYPO3_CONF_VARS']['WmdbCMSLayoutHook'][$_EXTKEY . '_pi1'] = 'tx_wmdbbaseewh_list_type';
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['WmdbCMSLayoutHook'] = 'TYPO3\\WmdbBaseEwh\\Hooks\\CmsLayout';
 
