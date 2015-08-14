@@ -45,7 +45,7 @@ class tx_wmdbbaseewh_cached extends \WMDB\WmdbFramework\Dispatcher\Abstracts\Plu
 		$cType = trim($this->cObj->data['CType']);
 		$this->initFalData();
 		if(strpos($cType, 'wmdb_base_ewh') !== false) {
-			$confVars = $GLOBALS['TYPO3_CONF_VARS']['EXT'][$this->extKey];
+			$confVars = $GLOBALS['TYPO3_CONF_VARS']['CONF'][$this->extKey];
 			$className = $confVars['specialsMapping'][$listType]['class'];
 		} else {
 			$className = '';

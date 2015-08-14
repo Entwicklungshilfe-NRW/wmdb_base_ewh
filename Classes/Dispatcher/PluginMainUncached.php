@@ -48,7 +48,7 @@ class tx_wmdbbaseewh_uncached extends \WMDB\WmdbFramework\Dispatcher\Abstracts\P
 		$listType = trim($this->cObj->data['tx_wmdbbaseewh_list_type']);
 		$cType = trim($this->cObj->data['CType']);
 		if(strpos($cType, 'wmdb_base_ewh') !== false) {
-			$confVars = $GLOBALS['TYPO3_CONF_VARS']['EXT'][$this->extKey];
+			$confVars = $GLOBALS['TYPO3_CONF_VARS']['CONF'][$this->extKey];
 			$className = $confVars['specialsMapping'][$listType]['class'];
 		} else {
 			$className = '';
