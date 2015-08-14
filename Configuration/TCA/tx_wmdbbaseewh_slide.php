@@ -104,9 +104,10 @@ $TCA['tx_wmdbbaseewh_slide'] = array(
 				'maxitems' => 1,
 			)
 		),
+		'link' => $GLOBALS['TCA']['tt_content']['columns']['header_link']
 	),
 	'types' => array(
-		'0' => array('showitem' => 'hidden;;1;;1-1-1, headline, description, author, --div--;Media, image, --div--;Extended, style')
+		'0' => array('showitem' => 'hidden;;1;;1-1-1, headline, link, description, author, --div--;Media, image, --div--;Extended, style')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => 'starttime, endtime, fe_group')

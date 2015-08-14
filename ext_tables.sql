@@ -24,6 +24,7 @@ CREATE TABLE tx_wmdbbaseewh_slide (
     image tinytext,
     author tinytext,
     style int(11) DEFAULT '0' NOT NULL,
+    link varchar(255) DEFAULT '' NOT NULL,
 
     PRIMARY KEY (uid),
     KEY parent (pid)

@@ -1,3 +1,4 @@
+{namespace ewh=TYPO3\WmdbFramework\ViewHelpers}
 <f:if condition="{data.mode} == 1">
     <f:then>
         <section id="testimonials">
@@ -71,23 +72,25 @@
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 10 -->
-                                <div class="tp-caption customin customout WmdbSlideFrame"
-                                     data-x="center" data-hoffset="0"
-                                     data-y="160"
-                                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                     data-speed="1000"
-                                     data-start="1000"
-                                     data-easing="Back.easeInOut"
-                                     data-endspeed="300"
-                                     style="z-index: 11">
-                                    <div class="WmdbSlideHeadline">
-                                        {slide.headline}
+                                <ewh:link value="{slide.link}">
+                                    <div class="tp-caption customin customout WmdbSlideFrame"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="160"
+                                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                         data-speed="1000"
+                                         data-start="1000"
+                                         data-easing="Back.easeInOut"
+                                         data-endspeed="300"
+                                         style="z-index: 11">
+                                        <div class="WmdbSlideHeadline">
+                                            {slide.headline}
+                                        </div>
+                                        <div class="WmdbSlideDescription">
+                                            <f:format.html>{slide.description}</f:format.html>
+                                        </div>
                                     </div>
-                                    <div class="WmdbSlideDescription">
-                                        <f:format.html>{slide.description}</f:format.html>
-                                    </div>
-                                </div>
+                                </ewh:link>
                             </li>
 
                         </f:for>
