@@ -11,4 +11,5 @@ page {
         }
     }
 
+    shortcutIcon = typo3conf/ext/wmdb_base_ewh/Resources/Public/img/favicon.ico
 }

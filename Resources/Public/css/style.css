@@ -64,11 +64,12 @@ nav {
 	background-color:#1c1c1c;
 }
 a#logo {
-	width:405px;
-	height:31px;
-	background:url(../img/Logo-WMDB-Entwicklungshilfe.png) no-repeat 0 0;
+	width:475px;
+	height:45px;
+	background:url(../img/WMDB-Logo-Entwicklunghilfe-laengs-neg_RGB.svg) no-repeat 0 0;
 	text-indent:-9999px;
 	display:block;
+	background-size: cover;
 }
 
 .divider_top{
@@ -283,12 +284,13 @@ ul.latest_news h5{
 
 /* #Site Footer */
 footer {
-	background:#1c1c1c url(../img/Visual-WMDB-Entwicklungshilfe-NL.png) no-repeat center 60px;
+	background:#1c1c1c url(../img/WMDB-Icon-Entwicklunghilfe-round-orange_RGB.svg) no-repeat center 50px;
 	color:#fff;
 	width:100%;
 	padding-top:150px;
 	text-align:center;
 	font-size:13px;
+	background-size: 100px 100px;
 }
 #nav-footer ul{
 	list-style:none;
@@ -3065,4 +3067,8 @@ div.csc-mailform fieldset.WmdbContactForm > ol > li > label > em {
 
 #nav-footer a:hover {
 	color: #ea5b0c;
+}
+
+.logo-container {
+	margin: 7px auto 7px auto;
 }
