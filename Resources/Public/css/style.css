@@ -229,12 +229,25 @@ h1 {
 #main-features h2, #main-features_green h2 {
 	text-transform:uppercase;
 	color:#2d4050;
-	font-size: 24px;
-	font-weight: bold;
-	letter-spacing: normal;
+	font-size:48px;
+	font-weight:normal;
+	letter-spacing:5px;
 	margin-top:0;
 	padding-top:0;
 }
+
+
+
+@media (max-width: 480px) {
+	#main-features h2, #main-features_green h2 {
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: normal;
+	}
+}
+
+
+
 #main_content .post h2{
 	font-size:26px;
 	line-height:28px;
