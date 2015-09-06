@@ -5,8 +5,7 @@ wmdb.footer {
     10.value (
         <h4>Know how sources</h4>
         <ul>
-            <li><a href="https://github.com/Entwicklungshilfe-NRW" target="_blank" data-htmlarea-external="1">Entwicklungshilfe NRW</a></li>
-            <li><a href="https://github.com/wmdbsystems" target="_blank" data-htmlarea-external="1">WMDB Systems</a></li>
+            <li><a href="https://github.com/Entwicklungshilfe-NRW" target="_blank" data-htmlarea-external="1">Entwicklungshilfe GitHub</a></li>
             <li><a href="http://www.rogoit.de/webdesign-typo3-blog-duisburg/" target="_blank" data-htmlarea-external="1">Rogoit Blog</a></li>
         </ul>
     )
@@ -46,11 +45,18 @@ wmdb.footer {
 
     30 = TEXT
     30.value (
+        <h4>Kooperationen</h4>
+        <ul>
+            <li><a href="http://www.wmdb.de/" target="_blank" title="TYPO3 Full Service Agentur aus Düsseldorf" data-htmlarea-external="1">WMDB Systems</a></li>
+            <li><a href="http://www.rogoit.de/" target="_blank" title="TYPO3 Full Service Agentur aus Duisburg" data-htmlarea-external="1">Rogoit</a></li>
+            <li><a href="http://webvisum.de/" target="_blank" title="Magento und eCommerce Full Service Agentur aus Köln" data-htmlarea-external="1">Webvisum</a></li>
+        </ul>
     )
     30.wrap = <div class="col-md-3 col-sm-3">|</div>
 
     40 = TEXT
     40.value (
+        <h4>Follow us</h4>
         <ul id="follow_us">
             <li><a href="https://www.facebook.com/entwicklungshilfe.nrw" target="_blank" data-htmlarea-external="1"><i class="icon-facebook"></i></a></li>
             <li><a href="https://twitter.com/help_for_devs" target="_blank" data-htmlarea-external="1"><i class="icon-twitter"></i></a></li>
