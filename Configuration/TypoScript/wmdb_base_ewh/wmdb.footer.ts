@@ -5,8 +5,9 @@ wmdb.footer {
     10.value (
         <h4>Know how sources</h4>
         <ul>
-            <li><a href="https://github.com/Entwicklungshilfe-NRW" target="_blank" data-htmlarea-external="1">Entwicklungshilfe GitHub</a></li>
-            <li><a href="http://www.rogoit.de/webdesign-typo3-blog-duisburg/" target="_blank" data-htmlarea-external="1">Rogoit Blog</a></li>
+            <li><a href="https://github.com/Entwicklungshilfe-NRW" target="_blank" title="PHP-Schulung Github Repository" data-htmlarea-external="1">Entwicklungshilfe GitHub</a></li>
+            <li><a href="http://presentations.entwicklungshilfe.nrw/" target="_blank" title="PHP-Schulung Präsentationen" data-htmlarea-external="1">Präsentationen</a></li>
+            <li><a href="http://www.rogoit.de/webdesign-typo3-blog-duisburg/" target="_blank" title="Webdevelopment Blog" data-htmlarea-external="1">Rogoit Blog</a></li>
         </ul>
     )
     10.wrap = <div class="col-md-3 col-sm-3">|</div>
@@ -48,8 +49,8 @@ wmdb.footer {
         <h4>Kooperationen</h4>
         <ul>
             <li><a href="http://www.wmdb.de/" target="_blank" title="TYPO3 Full Service Agentur aus Düsseldorf" data-htmlarea-external="1">WMDB Systems</a></li>
-            <li><a href="http://www.rogoit.de/" target="_blank" title="TYPO3 Full Service Agentur aus Duisburg" data-htmlarea-external="1">Rogoit</a></li>
             <li><a href="http://webvisum.de/" target="_blank" title="Magento und eCommerce Full Service Agentur aus Köln" data-htmlarea-external="1">Webvisum</a></li>
+            <li><a href="http://www.rogoit.de/" target="_blank" title="TYPO3 Full Service Agentur aus Duisburg" data-htmlarea-external="1">Rogoit</a></li>
         </ul>
     )
     30.wrap = <div class="col-md-3 col-sm-3">|</div>
@@ -58,8 +59,8 @@ wmdb.footer {
     40.value (
         <h4>Follow us</h4>
         <ul id="follow_us">
-            <li><a href="https://www.facebook.com/entwicklungshilfe.nrw" target="_blank" data-htmlarea-external="1"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://twitter.com/help_for_devs" target="_blank" data-htmlarea-external="1"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/entwicklungshilfe.nrw" target="_blank" title="PHP-Schulungen Entwicklungshilfe auf Facebook" data-htmlarea-external="1"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://twitter.com/help_for_devs" target="_blank" title="PHP-Schulungen Entwicklungshilfe auf Twitter" data-htmlarea-external="1"><i class="icon-twitter"></i></a></li>
         </ul>
         <ul>
             <li><strong class="phone">+49 (0)211 416 889 20</strong><br /><small>Mon - Fri / 9.00AM - 06.00PM</small></li>
