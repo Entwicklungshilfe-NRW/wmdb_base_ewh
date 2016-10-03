@@ -19,9 +19,9 @@ wmdb.footer {
         10.value (
             <h4>Anschrift</h4>
             <ul>
-                <li>WMDB Systems GmbH</li>
-                <li>Am Wehrhahn 41</li>
-                <li>D-40211 Düsseldorf/Germany</li>
+                <li>webvisum GmbH</li>
+                <li>Vitalisstr. 96</li>
+                <li>D-50827 Köln/Germany</li>
             </ul>
         )
 
@@ -35,9 +35,9 @@ wmdb.footer {
             20 = TEXT
             20.value = &nbsp;|&nbsp;
 
-            30 = TEXT
-            30.value = AGB
-            30.typolink.parameter = 11
+            // 30 = TEXT
+            // 30.value = AGB
+            // 30.typolink.parameter = 11
 
         }
 
